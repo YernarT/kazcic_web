@@ -1,26 +1,35 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	color: #fff;
+	font-weight: 500;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	font: inherit;
+	text-decoration: none;
+}
+
+ul,
+ol,
+dl {
+	list-style: none;
 }
 
 * {
-  box-sizing: border-box;
-}
+	padding: 0;
+	margin: 0;
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+	box-sizing: border-box;
 }
