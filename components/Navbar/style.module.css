@@ -1,13 +1,15 @@
 .navbar {
 	height: 80px;
 	padding: 0 8%;
-	background-color: #01539b;
+	background-color: var(--primary-color);
 
 	display: flex;
 	align-items: center;
 
 	user-select: none;
-	position: relative;
+	position: sticky;
+	top: 0;
+	left: 0;
 }
 
 .items {
@@ -123,14 +125,15 @@
 	padding: 2% 8%;
 	background-color: inherit;
 
-	transform: translateY(100%);
+	transform: translateY(100%) scaleY(0);
 	opacity: 0;
 	pointer-events: none;
 	transition: transform 300ms ease, opacity 300ms ease;
 }
 
 .mobileItems:global(.show) {
-	transform: translateY(0%);
+	pointer-events: auto;
+	transform: translateY(0%) scaleY(1);
 	opacity: 1;
 }
 
