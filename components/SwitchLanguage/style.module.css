@@ -1,0 +1,17 @@
+.switchLanguage {
+	position: absolute;
+	top: calc(2% + 50px);
+	left: calc(100% - 8% - 90px);
+
+	font-size: 20px;
+    text-align: center;
+
+	width: 90px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 30px;
+	background-color: var(--primary-color);
+
+    user-select: none;
+    cursor: pointer;
+}
