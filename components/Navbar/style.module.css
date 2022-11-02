@@ -142,7 +142,7 @@
 	left: 140px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
 	.burgetBtn {
 		display: block;
 	}

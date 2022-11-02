@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import styles from './style.module.css';
 
+const navItems = ['О мероприятии', 'Программа', 'Спикеры', 'Контакты'];
+
 export default function Navbar() {
 	const [isShowMobileNav, setIsShowMobileNav] = useState(false);
 
@@ -14,16 +16,12 @@ export default function Navbar() {
 			</div>
 
 			<ul className={styles.items}>
-				<li className={styles.item}>
-					<span>О мероприятии</span>
-				</li>
-				<li className={styles.item}>
-					<span>Программа</span>
-					<span className="triangle"></span>
-				</li>
-				<li className={styles.item}>
-					<span>Контакты</span>
-				</li>
+				{navItems.map((item, idx) => (
+					<li className={styles.item} key={idx}>
+						<span>{item}</span>
+						{/* <span className="triangle"></span> */}
+					</li>
+				))}
 			</ul>
 
 			<p className={styles.phone}>
@@ -31,16 +29,12 @@ export default function Navbar() {
 			</p>
 
 			<ul className={`${styles.mobileItems} ${isShowMobileNav ? 'show' : ''}`}>
-				<li className={styles.item}>
-					<span>О мероприятии</span>
-				</li>
-				<li className={styles.item}>
-					<span>Программа</span>
-					<span className="triangle"></span>
-				</li>
-				<li className={styles.item}>
-					<span>Контакты</span>
-				</li>
+				{navItems.map((item, idx) => (
+					<li className={styles.item} key={idx}>
+						<span>{item}</span>
+						{/* <span className="triangle"></span> */}
+					</li>
+				))}
 			</ul>
 		</nav>
 	);
