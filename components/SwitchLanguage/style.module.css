@@ -1,10 +1,8 @@
 .wrap {
-	position: absolute;
-	top: calc(2% + 50px);
-	left: calc(100% - 8% - 90px);
 }
 
 .switchLanguage {
+	color: var(--primary-color);
 	font-size: 20px;
 	text-align: center;
 
@@ -12,19 +10,8 @@
 	height: 45px;
 	line-height: 45px;
 	border-radius: 30px;
-	background-color: var(--primary-color);
+	background-color: #fff;
 
 	user-select: none;
 	cursor: pointer;
-}
-
-@media (max-width: 942px) {
-	.wrap {
-		position: static;
-		margin: 40px 8%;
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
 }
