@@ -47,7 +47,9 @@ export default function Intro() {
 				</div>
 			</div>
 
-			<div className={styles.registerBtn}>Зарегистрироваться</div>
+			<div className={styles.registerBtnWrap}>
+				<div className={styles.registerBtn}>Зарегистрироваться</div>
+			</div>
 		</section>
 	);
 }

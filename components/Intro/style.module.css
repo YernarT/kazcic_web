@@ -1,6 +1,6 @@
 .intro {
 	min-height: calc(100vh - 80px);
-    padding-bottom: 0.1px;
+	padding-bottom: 0.1px;
 
 	position: relative;
 	background: linear-gradient(
@@ -269,9 +269,13 @@
 	}
 }
 
+.registerBtnWrap {
+	margin: 64px 8%;
+}
+
 .registerBtn {
 	width: max-content;
-    margin: 64px 8%;
+	max-width: 100%;
 	padding: 12px 36px;
 	border-radius: 30px;
 	background-color: var(--yellow);
