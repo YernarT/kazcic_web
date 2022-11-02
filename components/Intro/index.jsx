@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
-import SwitchLanguage from '../SwitchLanguage';
 import styles from './style.module.css';
 
 const sponsors = [1, 2, 3, 4, 5];
@@ -9,8 +8,6 @@ const sponsors = [1, 2, 3, 4, 5];
 export default function Intro() {
 	return (
 		<section className={styles.intro}>
-			<SwitchLanguage />
-
 			<ul className={styles.sponsors}>
 				{sponsors.map(sponsor => (
 					<li className="sponsor" key={sponsor}>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import SwitchLanguage from '../SwitchLanguage';
+
 import styles from './style.module.css';
 
 const navItems = ['О мероприятии', 'Программа', 'Спикеры', 'Контакты'];
@@ -28,6 +30,8 @@ export default function Navbar() {
 				<span>+7 701 564 6494</span>
 			</p>
 
+			<SwitchLanguage className={styles.switchLanguage} />
+
 			<ul className={`${styles.mobileItems} ${isShowMobileNav ? 'show' : ''}`}>
 				{navItems.map((item, idx) => (
 					<li className={styles.item} key={idx}>
@@ -35,6 +39,8 @@ export default function Navbar() {
 						{/* <span className="triangle"></span> */}
 					</li>
 				))}
+
+				<SwitchLanguage />
 			</ul>
 		</nav>
 	);
