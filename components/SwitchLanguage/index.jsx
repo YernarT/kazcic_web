@@ -6,8 +6,10 @@ export default function SwitchLanguage() {
 	const [currentLanguage, setCurrentLanguage] = useState('Рус');
 
 	return (
-		<div className={styles.switchLanguage}>
-			<span>{currentLanguage}</span>
+		<div className={styles.wrap}>
+			<div className={styles.switchLanguage}>
+				<span>{currentLanguage}</span>
+			</div>
 		</div>
 	);
 }

@@ -9,6 +9,8 @@ const sponsors = [1, 2, 3, 4, 5];
 export default function Intro() {
 	return (
 		<section className={styles.intro}>
+			<SwitchLanguage />
+
 			<ul className={styles.sponsors}>
 				{sponsors.map(sponsor => (
 					<li className="sponsor" key={sponsor}>
@@ -16,8 +18,6 @@ export default function Intro() {
 					</li>
 				))}
 			</ul>
-
-			<SwitchLanguage />
 
 			<h4 className={styles.date}>8 ноября | Онлайн Расширенная</h4>
 

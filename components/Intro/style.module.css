@@ -1,6 +1,6 @@
 .intro {
 	min-height: calc(100vh - 80px);
-	padding-bottom: 0.1px;
+	padding: 0.1px 0;
 
 	position: relative;
 	background: linear-gradient(
@@ -227,6 +227,12 @@
 
 .desc :global(.light) {
 	color: var(--yellow);
+}
+
+@media (max-width: 942px) {
+	.sponsors {
+		padding: 2% 8%;
+	}
 }
 
 .infoBlock {
