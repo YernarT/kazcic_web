@@ -10,7 +10,7 @@
 }
 
 .sponsors {
-	padding: 2% calc(8% + 90px + 8px);
+	padding: 2% 8%;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -42,9 +42,9 @@
 	color: var(--yellow);
 }
 
-@media (max-width: 942px) {
+@media (max-width: 480px) {
 	.sponsors {
-		padding: 2% 8%;
+		flex-direction: column;
 	}
 }
 
