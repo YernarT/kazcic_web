@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import styles from '../styles/Home.module.css';
 
-import { Navbar, Intro, Info } from '../components';
+import { Navbar, Intro, Info, Footer } from '../components';
 
 export default function Home() {
 	return (
@@ -14,8 +14,11 @@ export default function Home() {
 			</Head>
 
 			<Navbar />
+
 			<Intro />
 			<Info />
+
+			<Footer />
 		</div>
 	);
 }
