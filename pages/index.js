@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import styles from '../styles/Home.module.css';
 
-import { Navbar, Intro } from '../components';
+import { Navbar, Intro, Info } from '../components';
 
 export default function Home() {
 	return (
@@ -15,8 +15,7 @@ export default function Home() {
 
 			<Navbar />
 			<Intro />
-
-			<main className={styles.main}></main>
+			<Info />
 		</div>
 	);
 }
