@@ -89,6 +89,7 @@
 }
 
 .registerBtnWrap {
+	display: block;
 	margin: 64px 8%;
 }
 

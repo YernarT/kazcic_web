@@ -5,7 +5,7 @@
 .program > :global(.title),
 .program > :global(.subtitle) {
 	color: var(--primary-color);
-    text-align: center;
+	text-align: center;
 }
 
 .program > :global(.title) {
@@ -14,4 +14,29 @@
 
 .program > :global(.subtitle) {
 	font-size: 34px;
+}
+
+.registerBtnWrap {
+	margin: 64px 0 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.registerBtn {
+	width: max-content;
+	max-width: 100%;
+	padding: 12px 36px;
+	border-radius: 30px;
+	background-color: var(--yellow);
+
+	font-size: 24px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+	user-select: none;
 }

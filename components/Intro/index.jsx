@@ -44,9 +44,11 @@ export default function Intro() {
 				</div>
 			</div>
 
-			<div className={styles.registerBtnWrap}>
+			<a
+				href="https://docs.google.com/forms/d/e/1FAIpQLSeg7m0aLdMX9OnpFwzZ8FNMqzsPgXV9b2fxabJse_gVT9YWoQ/viewform"
+				className={styles.registerBtnWrap}>
 				<div className={styles.registerBtn}>Зарегистрироваться</div>
-			</div>
+			</a>
 		</section>
 	);
 }
