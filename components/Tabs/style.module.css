@@ -1,0 +1,130 @@
+.tabs {
+	margin: 40px 8%;
+}
+
+.head {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	margin-bottom: 36px;
+}
+
+.sectionNum {
+	color: #000;
+	font-size: 16px;
+	text-align: center;
+
+	flex: 1 1 auto;
+	cursor: pointer;
+
+	padding-bottom: 16px;
+	border-bottom: 4px solid #b2b7bb;
+
+	transition: border-color 500ms ease;
+}
+.sectionNum:first-child {
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+.sectionNum:last-child {
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.sectionNum:global(.active) {
+	border-color: var(--primary-color);
+}
+
+.section {
+}
+
+.group {
+    padding: 0.1px;
+	padding-left: 20px;
+	margin-left: 70px;
+
+	position: relative;
+
+	border-left: 2px solid var(--primary-color);
+}
+
+.group::before {
+	content: '';
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 2px solid var(--primary-color);
+
+	position: absolute;
+}
+
+.group:first-child::before {
+	top: -15px;
+	left: -9px;
+}
+.group:last-child::before {
+	top: 6px;
+	left: -9px;
+	background-color: var(--primary-color);
+}
+.group:last-child::after {
+	content: '';
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 2px solid var(--primary-color);
+
+	position: absolute;
+	top: 100%;
+	left: -9px;
+}
+
+.group :global(.date) {
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+
+	position: absolute;
+	top: 50%;
+	left: -110px;
+	transform: translateY(calc(-50% - 30px));
+}
+
+.group :global(.title),
+.group :global(.subtitle) {
+	color: #000;
+	text-align: left;
+
+	margin-bottom: 24px;
+}
+
+.group :global(.title) {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.group :global(.subtitle) {
+	font-size: 18px;
+}
+
+.group :global(.item) {
+	color: rgba(0, 0, 0, 0.85);
+	font-size: 16px;
+
+	padding-left: 24px;
+	margin-bottom: 16px;
+
+	position: relative;
+}
+.group :global(.item)::before {
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #000;
+
+	position: absolute;
+	top: 50%;
+	left: 8px;
+	transform: translateY(-50%);
+}

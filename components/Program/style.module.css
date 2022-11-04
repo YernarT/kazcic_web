@@ -1,0 +1,17 @@
+.program {
+	padding: 0 8% 60px;
+}
+
+.program > :global(.title),
+.program > :global(.subtitle) {
+	color: var(--primary-color);
+    text-align: center;
+}
+
+.program > :global(.title) {
+	font-size: 48px;
+}
+
+.program > :global(.subtitle) {
+	font-size: 34px;
+}
