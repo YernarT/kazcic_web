@@ -1,10 +1,28 @@
 import Head from 'next/head';
+import { useMemo } from 'react';
+import { useRecoilValue } from 'recoil';
+import { languageAtom } from '../atoms';
 
 import styles from '../styles/Home.module.css';
 
 import { Navbar, Intro, Info, Program, Speakers, Footer } from '../components';
 
+import { textsRU, textsKZ, textsGER } from '../i18n';
+
 export default function Home() {
+	const language = useRecoilValue(languageAtom);
+	const texts = useMemo(() => {
+		switch (language) {
+			case 1:
+				return textsKZ;
+			case 2:
+				return textsGER;
+			case 0:
+			default:
+				return textsRU;
+		}
+	}, [language]);
+
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -13,14 +31,14 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Navbar />
+			<Navbar texts={{ ...texts.global, ...texts.navbar }} />
 
-			<Intro />
-			<Info />
-			<Program />
-			<Speakers />
+			<Intro texts={{ ...texts.global, ...texts.intro }} />
+			<Info texts={{ ...texts.global, ...texts.info }} />
+			<Program texts={{ ...texts.global }} />
+			<Speakers texts={{ ...texts.global }} />
 
-			<Footer />
+			<Footer texts={{ ...texts.global, ...texts.footer }} />
 		</div>
 	);
 }
