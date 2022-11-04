@@ -6,4 +6,6 @@ export { default as Info } from './Info';
 
 export { default as Program } from './Program';
 
+export { default as Speakers } from './Speakers';
+
 export { default as Footer } from './Footer';
