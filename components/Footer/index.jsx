@@ -20,13 +20,19 @@ export default function Footer() {
 
 			<ul className={styles.socials}>
 				<li className={styles.icon}>
-					<img src="/img/facebook.png" alt="facebook" />
+					<a href="https://m.facebook.com/kazcic.kz/">
+						<img src="/img/facebook.png" alt="facebook" />
+					</a>
 				</li>
 				<li className={styles.icon}>
-					<img src="/img/instagram.png" alt="instagram" />
+					<a href="https://www.instagram.com/vtp_kz/">
+						<img src="/img/instagram.png" alt="instagram" />
+					</a>
 				</li>
 				<li className={styles.icon}>
-					<img src="/img/telegram.png" alt="telegram" />
+					<a href="https://t.me/vtp_news">
+						<img src="/img/telegram.png" alt="telegram" />
+					</a>
 				</li>
 			</ul>
 		</footer>
