@@ -3,23 +3,18 @@ import React from 'react';
 
 import styles from './style.module.css';
 
-export default function Info() {
+export default function Info({ texts }) {
 	return (
 		<section className={styles.infoSection}>
 			<div className={styles.above}>
-				<h3 className={styles.title}>О конфереции</h3>
+				<h3 className={styles.title}>{texts.title}</h3>
 
-				<p className={styles.desc}>
-					В рамках конференции Вас ждут интереснейшие тренинги и встречи с
-					немецкими и казахстанскими компаниями которые достигли экономического
-					успеха ,благодаря правильному управлению, новому мышлению и внедрению
-					новых технологий.
-				</p>
+				<p className={styles.desc}>{texts.desc}</p>
 
-				<p className={styles.desc}>
-					По итогам мероприятия Вы получите: -много полезной информации;
-					-наладите горизонтальные связи; -повысите компотенцию.
-				</p>
+				<p className={styles.subtitle}>{texts.subtitle}</p>
+				<p className={styles.item}>- {texts.item1}</p>
+				<p className={styles.item}>- {texts.item2}</p>
+				<p className={styles.item}>- {texts.item3}</p>
 			</div>
 
 			<div className={styles.under}>

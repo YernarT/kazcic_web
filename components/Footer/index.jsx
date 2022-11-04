@@ -3,18 +3,18 @@ import React from 'react';
 
 import styles from './style.module.css';
 
-export default function Footer() {
+export default function Footer({ texts }) {
 	return (
 		<footer className={styles.footer}>
-			<h4 className={styles.title}>Свяжитесь с нами</h4>
+			<h4 className={styles.title}>{texts.title}</h4>
 
 			<div className={styles.group}>
-				<p className={styles.key}>Контактный номер:</p>
+				<p className={styles.key}>{texts.key1}</p>
 				<p className={styles.value}>+7 771 541 2850</p>
 			</div>
 
 			<div className={styles.group}>
-				<p className={styles.key}>e-mail адрес:</p>
+				<p className={styles.key}>{texts.key2}</p>
 				<p className={styles.value}>info.icc.kz@gmail.com</p>
 			</div>
 

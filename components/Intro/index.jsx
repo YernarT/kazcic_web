@@ -5,7 +5,7 @@ import styles from './style.module.css';
 
 const sponsors = [1, 2, 3, 4, 5];
 
-export default function Intro() {
+export default function Intro({ texts }) {
 	return (
 		<section className={styles.intro}>
 			<ul className={styles.sponsors}>
@@ -16,38 +16,36 @@ export default function Intro() {
 				))}
 			</ul>
 
-			<h4 className={styles.date}>8 ноября | Онлайн Расширенная</h4>
+			<h4 className={styles.date}>{texts.title}</h4>
 
-			<h3 className={styles.desc}>
-				Конференция по итогам реализации программы{' '}
-				<span className="light">«Fit for Partnership with Germany»</span> и
-				инструмента <span className="light"></span> в рамках национального
-				проекта по развитию предпринимательства на 2021-2025 годы
-			</h3>
+			<h3
+				className={styles.desc}
+				dangerouslySetInnerHTML={{ __html: texts.desc }}
+			/>
 
 			<div className={styles.infoBlock}>
 				<div className={styles.info}>
-					<div className="date">3</div>
-					<div className="desc">дня</div>
+					<div className="date">{texts.info1.date}</div>
+					<div className="desc">{texts.info1.desc}</div>
 				</div>
 				<div className={styles.info}>
-					<div className="date">13</div>
-					<div className="desc">зарубежных спикеров</div>
+					<div className="date">{texts.info2.date}</div>
+					<div className="desc">{texts.info2.desc}</div>
 				</div>
 				<div className={styles.info}>
-					<div className="date">13</div>
-					<div className="desc">практических кейсов</div>
+					<div className="date">{texts.info3.date}</div>
+					<div className="desc">{texts.info3.desc}</div>
 				</div>
 				<div className={styles.info}>
 					<img className="date img" src="/img/check-mark.png" alt="mark" />
-					<div className="desc">доступ к зарубежному опыту</div>
+					<div className="desc">{texts.info4.desc}</div>
 				</div>
 			</div>
 
 			<a
 				href="https://docs.google.com/forms/d/e/1FAIpQLSeg7m0aLdMX9OnpFwzZ8FNMqzsPgXV9b2fxabJse_gVT9YWoQ/viewform"
 				className={styles.registerBtnWrap}>
-				<div className={styles.registerBtn}>Зарегистрироваться</div>
+				<div className={styles.registerBtn}>{texts.register}</div>
 			</a>
 		</section>
 	);

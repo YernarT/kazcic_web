@@ -4,9 +4,7 @@ import SwitchLanguage from '../SwitchLanguage';
 
 import styles from './style.module.css';
 
-const navItems = ['О мероприятии', 'Программа', 'Спикеры', 'Контакты'];
-
-export default function Navbar() {
+export default function Navbar({ texts }) {
 	const [isShowMobileNav, setIsShowMobileNav] = useState(false);
 
 	return (
@@ -18,9 +16,9 @@ export default function Navbar() {
 			</div>
 
 			<ul className={styles.items}>
-				{navItems.map((item, idx) => (
-					<li className={styles.item} key={idx}>
-						<span>{item}</span>
+				{[1, 2, 3, 4].map(i => (
+					<li className={styles.item} key={i}>
+						<span>{texts[`n${i}`]}</span>
 						{/* <span className="triangle"></span> */}
 					</li>
 				))}
@@ -33,9 +31,9 @@ export default function Navbar() {
 			<SwitchLanguage className={styles.switchLanguage} />
 
 			<ul className={`${styles.mobileItems} ${isShowMobileNav ? 'show' : ''}`}>
-				{navItems.map((item, idx) => (
-					<li className={styles.item} key={idx}>
-						<span>{item}</span>
+				{[1, 2, 3, 4].map(i => (
+					<li className={styles.item} key={i}>
+						<span>{texts[`n${i}`]}</span>
 						{/* <span className="triangle"></span> */}
 					</li>
 				))}

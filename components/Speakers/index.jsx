@@ -55,7 +55,7 @@ const speakers = [
 	},
 ];
 
-export default function Speakers() {
+export default function Speakers({ texts }) {
 	return (
 		<section className={styles.speakers}>
 			<h3 className="title">Спикеры</h3>
@@ -70,7 +70,7 @@ export default function Speakers() {
 			<a
 				href="https://docs.google.com/forms/d/e/1FAIpQLSeg7m0aLdMX9OnpFwzZ8FNMqzsPgXV9b2fxabJse_gVT9YWoQ/viewform"
 				className={styles.registerBtnWrap}>
-				<div className={styles.registerBtn}>Зарегистрироваться</div>
+				<div className={styles.registerBtn}>{texts.register}</div>
 			</a>
 		</section>
 	);
