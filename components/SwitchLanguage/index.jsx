@@ -1,23 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useRecoilState } from 'recoil';
+import { languageAtom } from '../../atoms';
 
 import styles from './style.module.css';
 
 const languages = ['Рус', 'Қаз', 'Нем'];
 
 export default function SwitchLanguage({ className }) {
-	const [currentLanguageIdx, setCurrentLanguageIdx] = useState(0);
+	const [languageIdx, setLanguageIdx] = useRecoilState(languageAtom);
 
 	useEffect(() => {
-		let beforeLanguage = localStorage.getItem('language');
+		let beforeLanguage = Number(localStorage.getItem('language'));
 
 		if (beforeLanguage) {
-			setCurrentLanguageIdx(Number(beforeLanguage));
+			setLanguageIdx(beforeLanguage);
 		}
-	}, []);
+	}, [setLanguageIdx]);
 
 	useEffect(() => {
 		const handler = () => {
-			localStorage.setItem('language', currentLanguageIdx);
+			localStorage.setItem('language', languageIdx);
 		};
 
 		window.addEventListener('beforeunload', handler);
@@ -25,20 +27,20 @@ export default function SwitchLanguage({ className }) {
 		return () => {
 			window.removeEventListener('beforeunload', handler);
 		};
-	}, [currentLanguageIdx]);
+	}, [languageIdx]);
 
 	return (
 		<div className={`${styles.wrap} ${className}`}>
 			<div
 				className={styles.switchLanguage}
 				onClick={() => {
-					if (currentLanguageIdx === languages.length - 1) {
-						setCurrentLanguageIdx(0);
+					if (languageIdx === languages.length - 1) {
+						setLanguageIdx(0);
 					} else {
-						setCurrentLanguageIdx(prevIdx => prevIdx + 1);
+						setLanguageIdx(prevIdx => prevIdx + 1);
 					}
 				}}>
-				<span>{languages[currentLanguageIdx]}</span>
+				<span>{languages[languageIdx]}</span>
 			</div>
 		</div>
 	);
