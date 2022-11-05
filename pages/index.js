@@ -36,6 +36,26 @@ export default function Home() {
 			<Intro texts={{ ...texts.global, ...texts.intro }} />
 			<Info texts={{ ...texts.global, ...texts.info }} />
 			<Program texts={{ ...texts.global }} />
+			<div className={styles.videoWrap}>
+				{language === 0 && (
+					<video className={styles.video} muted controls>
+						<source src="/video/v_ru.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
+				)}
+				{language === 1 && (
+					<video className={styles.video} muted controls>
+						<source src="/video/v_kz.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
+				)}
+				{language === 2 && (
+					<video className={styles.video} muted controls>
+						<source src="/video/v_kz.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
+				)}
+			</div>
 			<Speakers texts={{ ...texts.global }} />
 
 			<Footer texts={{ ...texts.global, ...texts.footer }} />

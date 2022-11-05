@@ -5,3 +5,40 @@
 	position: relative;
 	overflow: hidden auto;
 }
+
+.videoWrap {
+	margin: 0 8% 40px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.video {
+	width: 700px;
+	height: 400px;
+	border: 1px solid #000;
+}
+
+@media (max-width: 920px) {
+	.video {
+		width: 500px;
+		height: 300px;
+	}
+}
+
+
+@media (max-width: 676px) {
+	.video {
+		width: 400px;
+		height: 260px;
+	}
+}
+
+
+@media (max-width: 505px) {
+	.video {
+		width: 100%;
+		height: 185px;
+	}
+}
