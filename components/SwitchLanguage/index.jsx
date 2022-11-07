@@ -4,7 +4,7 @@ import { languageAtom } from '../../atoms';
 
 import styles from './style.module.css';
 
-const languages = ['Рус', 'Қаз', 'Нем'];
+const languages = ['Рус', 'Қаз', 'Deu'];
 
 export default function SwitchLanguage({ className }) {
 	const [languageIdx, setLanguageIdx] = useRecoilState(languageAtom);
