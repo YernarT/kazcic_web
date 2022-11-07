@@ -24,6 +24,32 @@ export default function Tabs() {
 				))}
 			</div>
 
+			<div className={styles.mobileHead}>
+				<span
+					className="left"
+					onClick={() =>
+						setSection(prevState =>
+							prevState !== 1 ? prevState - 1 : prevState,
+						)
+					}>
+					{'<'}
+				</span>
+				<div className={styles.sectionNum}>
+					{section} {language === 0 && 'секция'}
+					{language === 1 && 'бөлім'}
+					{language === 2 && 'abschnitt'}
+				</div>
+				<span
+					className="right"
+					onClick={() =>
+						setSection(prevState =>
+							prevState !== 4 ? prevState + 1 : prevState,
+						)
+					}>
+					{'>'}
+				</span>
+			</div>
+
 			<Section1 activeSectionId={section} language={language} />
 			<Section2 activeSectionId={section} language={language} />
 			<Section3 activeSectionId={section} language={language} />

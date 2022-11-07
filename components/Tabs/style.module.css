@@ -150,4 +150,47 @@
 	.group {
 		margin-left: 60px;
 	}
+
+	.head {
+		display: none;
+	}
+}
+
+.mobileHead {
+	margin-bottom: 36px;
+
+	display: flex;
+	align-items: center;
+}
+.mobileHead .sectionNum {
+	cursor: auto;
+	padding-bottom: 8px;
+}
+
+.mobileHead :global(.left),
+.mobileHead :global(.right) {
+	font-size: 24px;
+	color: #000;
+
+	flex: 0 0 36px;
+	height: 36px;
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 50%;
+	border: 1px solid #000;
+
+	position: relative;
+	top: -5px;
+}
+
+.mobileHead :global(.left) {
+	left: -15px;
+}
+
+.mobileHead :global(.right) {
+	left: 15px;
 }
