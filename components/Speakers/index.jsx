@@ -106,9 +106,11 @@ const speakers = [
 const notImageSpeakerIdx = [3, 13, 14];
 
 export default function Speakers({ texts }) {
+	console.log(texts);
+
 	return (
 		<section className={styles.speakers} id="speakers">
-			<h3 className="title">Спикеры</h3>
+			<h3 className="title">{texts.speakers}</h3>
 
 			<ul className={styles.speakerList}>
 				{speakers.map((speaker, idx) => {

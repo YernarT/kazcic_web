@@ -35,7 +35,7 @@ export default function Home() {
 
 			<Intro texts={{ ...texts.global, ...texts.intro }} />
 			<Info texts={{ ...texts.global, ...texts.info }} />
-			<Program texts={{ ...texts.global }} />
+			<Program texts={{ ...texts.global, ...texts.program }} />
 			<div className={styles.videoWrap}>
 				{language === 0 && (
 					<video className={styles.video} muted controls>
@@ -56,7 +56,7 @@ export default function Home() {
 					</video>
 				)}
 			</div>
-			<Speakers texts={{ ...texts.global }} />
+			<Speakers texts={{ ...texts.global, ...texts.speakers }} />
 
 			<Footer texts={{ ...texts.global, ...texts.footer }} />
 		</div>

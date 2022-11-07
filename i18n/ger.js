@@ -39,6 +39,15 @@ const texts = {
 		item3: 'Erhöhen Sie Ihre Kompetenz.',
 	},
 
+	program: {
+		title: 'Das Programm',
+		subtitle: 'Erweiterte Konferenz',
+	},
+
+	speakers: {
+		speakers: 'Sprecher',
+	},
+
 	footer: {
 		title: 'Kontaktiere uns',
 

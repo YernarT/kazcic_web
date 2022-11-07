@@ -39,6 +39,15 @@ const texts = {
 		item3: 'құзыреттілігін арттыру.',
 	},
 
+	program: {
+		title: 'Бағдарлама',
+		subtitle: 'Кеңейтілген конференция',
+	},
+
+	speakers: {
+		speakers: 'Спикерлер',
+	},
+
 	footer: {
 		title: 'Бізбен байланысыңыз',
 

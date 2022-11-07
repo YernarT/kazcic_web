@@ -39,6 +39,15 @@ const texts = {
 		item3: 'повысите компетенцию.',
 	},
 
+	program: {
+		title: 'Программа',
+		subtitle: 'Расширенная конфиренция',
+	},
+
+	speakers: {
+		speakers: 'Спикеры',
+	},
+
 	footer: {
 		title: 'Свяжитесь с нами',
 

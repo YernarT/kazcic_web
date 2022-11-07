@@ -7,8 +7,8 @@ import styles from './style.module.css';
 export default function Porgram({ texts }) {
 	return (
 		<section className={styles.program} id="program">
-			<h3 className="title">Программа</h3>
-			<p className="subtitle">Расширенная конфиренция</p>
+			<h3 className="title">{texts.title}</h3>
+			<p className="subtitle">{texts.subtitle}</p>
 
 			<Tabs />
 
