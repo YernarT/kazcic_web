@@ -1,4 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import { useRecoilState } from 'recoil';
+import { languageAtom } from '../../atoms';
 
 import SwitchLanguage from '../SwitchLanguage';
 
@@ -7,6 +9,7 @@ import styles from './style.module.css';
 const navItems = ['intro', 'program', 'speakers', 'footer'];
 
 export default function Navbar({ texts }) {
+	const [languageIdx, setLanguageIdx] = useRecoilState(languageAtom);
 	const [isShowMobileNav, setIsShowMobileNav] = useState(false);
 
 	const [scolled, setScolled] = useState(false);
@@ -105,7 +108,24 @@ export default function Navbar({ texts }) {
 					</li>
 				))}
 
-				<SwitchLanguage />
+				<a
+					href="https://docs.google.com/forms/d/e/1FAIpQLSeg7m0aLdMX9OnpFwzZ8FNMqzsPgXV9b2fxabJse_gVT9YWoQ/viewform"
+					className={styles.registerBtnWrap}>
+					<div className={styles.registerBtn}>{texts.register}</div>
+				</a>
+
+				{/* <SwitchLanguage /> */}
+				<div className={styles.buttons}>
+					{languageIdx !== 0 && (
+						<button onClick={() => setLanguageIdx(0)}>Рус</button>
+					)}
+					{languageIdx !== 1 && (
+						<button onClick={() => setLanguageIdx(1)}>Қаз</button>
+					)}
+					{languageIdx !== 2 && (
+						<button onClick={() => setLanguageIdx(2)}>Deu</button>
+					)}
+				</div>
 			</ul>
 		</nav>
 	);

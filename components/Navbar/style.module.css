@@ -163,3 +163,43 @@
 		display: none;
 	}
 }
+
+.registerBtnWrap {
+	display: block;
+	margin: 8px 0 0;
+}
+
+.registerBtn {
+	width: 100%;
+	max-width: 100%;
+	padding: 12px 36px;
+	border-radius: 30px;
+	background-color: var(--yellow);
+
+	font-size: 24px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+	user-select: none;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.buttons button {
+	outline: none;
+	border: none;
+	background-color: transparent;
+
+	color: #fff;
+	font-size: 18px;
+	text-align: left;
+
+	padding: 8px 16px 8px 0;
+}
