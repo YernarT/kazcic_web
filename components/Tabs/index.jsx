@@ -604,12 +604,9 @@ const Section4 = ({ activeSectionId, language }) => (
 			</div>
 
 			<p className="item">
-				{language === 0 &&
-					'Andrea Eles, руководитель проектов GIZ Владимир Богданов, представитель GIZ'}
-				{language === 1 &&
-					'Андреа Элес, GIZ жобасының менеджері Владимир Богданов, GIZ өкілі'}
-				{language === 2 &&
-					'Andrea Eles, GIZ-Projektleiterin Vladimir Bogdanov, GIZ-Vertreter'}
+				{language === 0 && 'Владимир Богданов, представитель GIZ'}
+				{language === 1 && 'Владимир Богданов, GIZ өкілі'}
+				{language === 2 && 'Vladimir Bogdanov, GIZ-Vertreter'}
 			</p>
 
 			<div className="subtitle">
