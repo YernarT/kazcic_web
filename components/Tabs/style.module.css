@@ -128,3 +128,26 @@
 	left: 8px;
 	transform: translateY(-50%);
 }
+
+@media (max-width: 678px) {
+	.group :global(.date) {
+		font-size: small;
+		left: -95px;
+	}
+
+	.group :global(.title) {
+		font-size: 18px;
+	}
+
+	.group :global(.subtitle) {
+		font-size: 16px;
+	}
+
+	.group :global(.item) {
+		font-size: small;
+	}
+
+	.group {
+		margin-left: 60px;
+	}
+}
