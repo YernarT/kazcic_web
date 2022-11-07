@@ -133,6 +133,7 @@
 	height: calc(100vh - 80px);
 	padding: 2% 8%;
 	background-color: inherit;
+	overflow: hidden auto;
 
 	transform: translateY(100%) scaleY(0);
 	opacity: 0;
@@ -188,18 +189,22 @@
 
 .buttons {
 	display: flex;
-	flex-direction: column;
-	gap: 4px;
+	gap: 16px;
 }
 
 .buttons button {
 	outline: none;
-	border: none;
+	border: 1px solid #fff;
+	border-radius: 30px;
 	background-color: transparent;
 
 	color: #fff;
 	font-size: 18px;
-	text-align: left;
 
-	padding: 8px 16px 8px 0;
+	flex: 1 1 auto;
+
+	padding: 8px 16px;
+}
+
+.sponsors {
 }

@@ -9,21 +9,10 @@
 	background-size: 100% 100%;
 }
 
-.sponsors {
-	padding: 2% 8%;
-
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-}
-
-.sponsors :global(.sponsor) img {
-	width: 100%;
-	max-height: 120px;
-
-	object-fit: cover;
+@media (max-width: 678px) {
+	.sponsors {
+		display: none !important;
+	}
 }
 
 .date,

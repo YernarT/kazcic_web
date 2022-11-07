@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 import { languageAtom } from '../../atoms';
 
+import Logos from '../Logos';
 import SwitchLanguage from '../SwitchLanguage';
 
 import styles from './style.module.css';
@@ -126,6 +127,8 @@ export default function Navbar({ texts }) {
 						<button onClick={() => setLanguageIdx(2)}>Deu</button>
 					)}
 				</div>
+
+				<Logos className={styles.sponsors} />
 			</ul>
 		</nav>
 	);

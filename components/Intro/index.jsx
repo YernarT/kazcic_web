@@ -1,20 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
-import styles from './style.module.css';
+import Logos from '../Logos';
 
-const sponsors = [1, 2, 3, 4, 5];
+import styles from './style.module.css';
 
 export default function Intro({ texts }) {
 	return (
 		<section className={styles.intro} id="intro">
-			<ul className={styles.sponsors}>
-				{sponsors.map(sponsor => (
-					<li className="sponsor" key={sponsor}>
-						<img src={`/img/sponsor${sponsor}.png`} alt="sponsor" />
-					</li>
-				))}
-			</ul>
+			<Logos className={styles.sponsors} />
 
 			<h4 className={styles.date}>{texts.title}</h4>
 
