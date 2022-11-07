@@ -4,22 +4,29 @@
 	align-items: center;
 }
 
-.speakerCard img {
+.speakerCard :global(.imgWrap) {
 	width: 280px;
 	height: 280px;
-	object-fit: cover;
 	border-radius: 50%;
+	background-color: #d9d9d9;
+}
+
+.speakerCard img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
 }
 
 @media (max-width: 1630px) {
-	.speakerCard img {
+	.speakerCard :global(.imgWrap) {
 		width: 200px;
 		height: 200px;
 	}
 }
 
 @media (max-width: 880px) {
-	.speakerCard img {
+	.speakerCard :global(.imgWrap) {
 		width: 160px;
 		height: 160px;
 	}
