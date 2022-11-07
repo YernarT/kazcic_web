@@ -1,11 +1,72 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 
 import SwitchLanguage from '../SwitchLanguage';
 
 import styles from './style.module.css';
 
+const navItems = ['intro', 'program', 'speakers', 'footer'];
+
 export default function Navbar({ texts }) {
 	const [isShowMobileNav, setIsShowMobileNav] = useState(false);
+
+	const [scolled, setScolled] = useState(false);
+	const [currentItemId, setCurrentItemId] = useState(null);
+	const handleItemClick = useCallback(id => {
+		setIsShowMobileNav(false);
+		setCurrentItemId(id);
+		setScolled(true);
+	}, []);
+
+	useEffect(() => {
+		const scrollElement = document.querySelector('#__next > div');
+		const targetElement = document.getElementById(currentItemId);
+		let tid = null;
+		let yOffset = 0;
+
+		if (scolled) {
+			targetElement.scrollIntoView({ 'behavior': 'smooth' });
+
+			switch (currentItemId) {
+				case 'intro':
+					// scrollElement.scrollBy({ top: -90, behavior: 'smooth' });
+					break;
+				case 'program':
+					// scrollElement.scrollTo({ top: -90, behavior: 'smooth' });
+					break;
+				case 'speakers':
+					yOffset = 0;
+					break;
+				case 'footer':
+					yOffset = 0;
+					break;
+			}
+
+			setScolled(false);
+		}
+
+		// if (currentItemId !== null) {
+		// 	const element = document.getElementById(currentItemId);
+
+		// 	const y =
+		// 		element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+		// 	scrollElement.removeEventListener('scroll', scrollHandler);
+		// 	console.log('y: ', y);
+		// 	scrollElement.scrollTo({ top: y, left: 0, behavior: 'smooth' });
+
+		// 	// tid = setTimeout(
+		// 	// 	() => scrollElement.addEventListener('scroll', scrollHandler),
+		// 	// 	1500,
+		// 	// );
+		// }
+
+		return () => {
+			// scrollElement.removeEventListener('scroll', scrollHandler);
+			// if (tid) {
+			// clearTimeout(tid);
+			// }
+		};
+	}, [scolled]);
 
 	return (
 		<nav className={styles.navbar}>
@@ -16,9 +77,12 @@ export default function Navbar({ texts }) {
 			</div>
 
 			<ul className={styles.items}>
-				{[1, 2, 3, 4].map(i => (
-					<li className={styles.item} key={i}>
-						<span>{texts[`n${i}`]}</span>
+				{navItems.map((id, idx) => (
+					<li
+						className={styles.item}
+						key={id}
+						onClick={() => handleItemClick(id)}>
+						<span>{texts[`n${idx + 1}`]}</span>
 						{/* <span className="triangle"></span> */}
 					</li>
 				))}
@@ -31,9 +95,12 @@ export default function Navbar({ texts }) {
 			<SwitchLanguage className={styles.switchLanguage} />
 
 			<ul className={`${styles.mobileItems} ${isShowMobileNav ? 'show' : ''}`}>
-				{[1, 2, 3, 4].map(i => (
-					<li className={styles.item} key={i}>
-						<span>{texts[`n${i}`]}</span>
+				{navItems.map((id, idx) => (
+					<li
+						className={styles.item}
+						key={id}
+						onClick={() => handleItemClick(id)}>
+						<span>{texts[`n${idx + 1}`]}</span>
 						{/* <span className="triangle"></span> */}
 					</li>
 				))}

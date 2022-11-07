@@ -7,7 +7,7 @@ const sponsors = [1, 2, 3, 4, 5];
 
 export default function Intro({ texts }) {
 	return (
-		<section className={styles.intro}>
+		<section className={styles.intro} id="intro">
 			<ul className={styles.sponsors}>
 				{sponsors.map(sponsor => (
 					<li className="sponsor" key={sponsor}>

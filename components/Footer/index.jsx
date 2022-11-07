@@ -5,7 +5,7 @@ import styles from './style.module.css';
 
 export default function Footer({ texts }) {
 	return (
-		<footer className={styles.footer}>
+		<footer className={styles.footer} id="footer">
 			<h4 className={styles.title}>{texts.title}</h4>
 
 			<div className={styles.group}>
