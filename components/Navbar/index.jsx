@@ -89,7 +89,7 @@ export default function Navbar({ texts }) {
 			</ul>
 
 			<p className={styles.phone}>
-				<span>+7 701 564 6494</span>
+				<span>+7 771 541 2580</span>
 			</p>
 
 			<SwitchLanguage className={styles.switchLanguage} />
