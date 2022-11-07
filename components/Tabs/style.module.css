@@ -194,3 +194,9 @@
 .mobileHead :global(.right) {
 	left: 15px;
 }
+
+@media (min-width: 678px) {
+	.mobileHead {
+		display: none;
+	}
+}
