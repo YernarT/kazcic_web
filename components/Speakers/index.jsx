@@ -633,7 +633,7 @@ const speakers = [
 	},
 ];
 
-const notImageSpeakerIdx = [3, 13, 14, 25];
+const notImageSpeakerIdx = [8, 9, 13];
 
 export default function Speakers({ texts }) {
 	return (
@@ -642,9 +642,9 @@ export default function Speakers({ texts }) {
 
 			<ul className={styles.speakerList}>
 				{speakers
-					.sort((p, c) => p.order > c.order)
+					.sort((p, c) => p.order - c.order)
 					.map((speaker, idx) => {
-						speaker.image = `/img/speaker${idx + 1}.png`;
+						speaker.image = `/img/${speaker.name(0)}.png`;
 						return (
 							<SpeakerCard
 								speaker={speaker}
