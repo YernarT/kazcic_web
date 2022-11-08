@@ -7,7 +7,7 @@ import SwitchLanguage from '../SwitchLanguage';
 
 import styles from './style.module.css';
 
-const navItems = ['intro', 'program', 'speakers', 'footer'];
+const navItems = ['info', 'program', 'speakers', 'footer'];
 
 export default function Navbar({ texts }) {
 	const [languageIdx, setLanguageIdx] = useRecoilState(languageAtom);

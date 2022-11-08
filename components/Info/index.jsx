@@ -5,7 +5,7 @@ import styles from './style.module.css';
 
 export default function Info({ texts }) {
 	return (
-		<section className={styles.infoSection}>
+		<section className={styles.infoSection} id="info">
 			<div className={styles.above}>
 				<h3 className={styles.title}>{texts.title}</h3>
 
