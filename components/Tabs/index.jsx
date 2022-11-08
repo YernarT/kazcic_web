@@ -86,11 +86,11 @@ const CommonText = ({ language }) => (
 		</p>
 		<p className="item">
 			{language === 0 &&
-				'Дарын Абдуалиев, директор Департамента развития предпринимательства Министерства национальной экономики Республики Казахстан'}
+				'Абдуали Дарын Абдуалиулы, директор Департамента государственной поддержки и защиты предпринимательства Министерства национальной экономики Республики Казахстан'}
 			{language === 1 &&
-				'Дарын Әбдуалиев, ҚР Ұлттық экономика министрлігі Кәсіпкерлікті дамыту департаментінің директоры'}
+				'Әбдуәли Дарын Әбдуәлиұлы, Қазақстан Республикасы Ұлттық экономика министрлігі Мемлекеттік қолдау және кәсіпкерлікті қорғау департаментінің директоры'}
 			{language === 2 &&
-				'Daryn Abdualiev, Direktor der Abteilung für unternehmerische Entwicklung des Ministeriums für Volkswirtschaft der Republik Kasachstan'}
+				'Abduali Daryn, Direktor der Abteilung für staatliche Unterstützung und Schutz des Unternehmertums des Ministeriums für Volkswirtschaft der Republik Kasachstan'}
 		</p>
 	</div>
 );
@@ -102,7 +102,7 @@ const Section1 = ({ activeSectionId, language }) => (
 		<CommonText language={language} />
 
 		<div className={styles.group}>
-			<div className="date">14:10-17:15</div>
+			<div className="date">14:10-17:00</div>
 
 			<div className="title">
 				I {language === 0 && 'Секция'}
@@ -172,11 +172,11 @@ const Section1 = ({ activeSectionId, language }) => (
 			</div>
 			<p className="item">
 				{language === 0 &&
-					'Айсулу Акпекова, СПК «Урджар-Сут», участник программы '}
+					'Айсулу Акпекова, Председатель правления СПК «Урджар-Сут», участник программы'}
 				{language === 1 &&
-					'Айсулу Акпекова, «Үржар-Сүт» СПК, бағдарламаға қатысушы'}
+					'Айсұлу Ақпекова, «Үржар-Сүт» ӘКК басқарма төрайымы, бағдарламаға қатысушы'}
 				{language === 2 &&
-					'Aisulu Akpekova, SPK "Urjar-Sut", Teilnehmerin des Programms'}
+					'Aisulu Akpekova, Vorstandsvorsitzende der SEC "Urjar-Sut", Teilnehmerin des Programms'}
 			</p>
 
 			<div className="subtitle">
@@ -277,9 +277,12 @@ const Section2 = ({ activeSectionId, language }) => (
 			</div>
 
 			<p className="item">
-				{language === 0 && 'уточняется'}
-				{language === 1 && 'уточняется'}
-				{language === 2 && 'уточняется'}
+				{language === 0 &&
+					'Дидар Ахмедин, директор ТОО «Bestinet Kazakhstan» и член ОО «Kaz Alpine Club»'}
+				{language === 1 &&
+					'Дидар Ахмедин, «Бестинет Казахстан» ЖШС директоры және «Kaz Alpine Club» ҮЕҰ мүшесі'}
+				{language === 2 &&
+					'Didar Akhmedin, Direktor von Bestinet Kazakhstan LLP und Mitglied der NGO Kaz Alpine Club'}
 			</p>
 
 			<div className="subtitle">
@@ -411,11 +414,11 @@ const Section2 = ({ activeSectionId, language }) => (
 
 			<p className="item">
 				{language === 0 &&
-					'Айдос Ибрагим, дипломированный психолог, магистр, в данный момент докторант. Более трех лет работы по семи навыкам высокоэффективных людей Стивена Кови. '}
+					'Айдос Ибрагим, дипломированный психолог, магистр, докторант. Имеет более трех лет работы по семи навыкам высокоэффективных людей Стивена Кови. Успешная работа по интеграции навыков в элементы психотерапии в рамках помогающих профессий разных уровней глубины.'}
 				{language === 1 &&
-					'Айдос Ибрагим, психолог, магистр, қазіргі уақытта докторант. Стивен Ковидің «Жоғары тиімді адамдардың жеті әдеті» бойынша үш жылдан астам жұмыс.'}
+					'Айдос Ибрагим, магистрант психолог, магистр, докторант. Стивен Ковидің «Жоғары тиімді адамдардың жеті әдеті» бойынша үш жылдан астам жұмыс істейді. Әртүрлі тереңдіктегі көмекші мамандықтар аясында психотерапия элементтеріне дағдыларды біріктіру бойынша табысты жұмыс.'}
 				{language === 2 &&
-					'Aidos Ibragim, Diplom-Psychologe, Master, derzeit Doktorand. Über drei Jahre Arbeit an Stephen Coveys Seven Habits of Highly Effective People.'}
+					'Aidos Ibragim, Diplom-Psychologe, Master, Doktorand. Arbeitet seit über drei Jahren an Stephen Coveys Seven Habits of Highly Effective People. Erfolgreiche Arbeit an der Integration von Fähigkeiten in Elemente der Psychotherapie innerhalb der helfenden Berufe auf verschiedenen Tiefenstufen.'}
 			</p>
 		</div>
 	</section>
@@ -450,11 +453,11 @@ const Section3 = ({ activeSectionId, language }) => (
 
 			<p className="item">
 				{language === 0 &&
-					'Гульмира Уахитова, к.э.н., Председатель Правления СРО Союз ЮЛ и ИП «Нац. объединение предпринимателей легкой промышленности «Qaz Textile Industy»'}
+					'Гульмира Уахитова, к.э.н., Председатель Правления СРО Союз ЮЛ и ИП «Нац. объединение предпринимателей легкой промышленности «Qaz Textile»'}
 				{language === 1 &&
-					'Гүлмира Уахитова, ф.ғ.к. «Qaz Textile Industry» жеңіл өнеркәсіп кәсіпкерлері қауымдастығы'}
+					'Гүлмира Уахитова, ф.ғ.к. «Qaz Textile» жеңіл өнеркәсіп кәсіпкерлері қауымдастығы'}
 				{language === 2 &&
-					'Gulmira Uakhitova, Ph.D. Verband der Unternehmer der Leichtindustrie "Qaz Textile Industry"'}
+					'Gulmira Uakhitova, Ph.D. Verband der Unternehmer der Leichtindustrie "Qaz Textile"'}
 			</p>
 
 			<div className="subtitle">
@@ -467,10 +470,19 @@ const Section3 = ({ activeSectionId, language }) => (
 				{language === 0 &&
 					'Сауле Шауенова, основатель и генеральный директор группы компаний "Ютария LTD" '}
 				{language === 1 &&
-					'Сауле Шауенова, «Ютария ЛТД» компаниялар тобының негізін қалаушы және бас директоры'}
+					'Сәуле Шәуенова, «Ютария ЛТД» компаниялар тобының негізін қалаушы және бас директоры'}
 				{language === 2 &&
 					'Saule Shauenova, Gründerin und Generaldirektorin der Unternehmensgruppe „Yutaria LTD“'}
 			</p>
+
+			<div className="subtitle">
+				{language === 0 &&
+					'Тема: Дальнейшее развитие отрасли в Казахстане через кооперирование  с зарубежными партнерами , включая диверсификацию рынков  и улучшение логистики поставок'}
+				{language === 1 &&
+					'Тақырып: Шетелдік серіктестермен ынтымақтастық арқылы Қазақстандағы саланы одан әрі дамыту, оның ішінде нарықтарды әртараптандыру және жеткізу логистикасын жақсарту'}
+				{language === 2 &&
+					'Thema: Weiterentwicklung der Industrie in Kasachstan durch Kooperation mit ausländischen Partnern, einschließlich Diversifizierung der Märkte und Verbesserung der Versorgungslogistik'}
+			</div>
 
 			<p className="item">
 				{language === 0 &&
@@ -528,11 +540,11 @@ const Section3 = ({ activeSectionId, language }) => (
 
 			<p className="item">
 				{language === 0 &&
-					'Гульмира Уахитова, к.э.н., Председатель Правления СРО Союз ЮЛ и ИП «Нац. объединение предпринимателей легкой промышленности «Qaz Textile Industy»'}
+					'Гульмира Уахитова, к.э.н., Председатель Правления СРО Союз ЮЛ и ИП «Нац. объединение предпринимателей легкой промышленности «Qaz Textile»'}
 				{language === 1 &&
-					'Гульмира Уахитова, к.э.н., Заңды тұлғалар одағы және АЖ СРО Басқарма төрағасы «Нат. «Qaz Textile Industry» жеңіл өнеркәсіп кәсіпкерлері қауымдастығы'}
+					'Гүлмира Уахитова, ф.ғ.д. «Qaz Textile» жеңіл өнеркәсіп кәсіпкерлері қауымдастығы'}
 				{language === 2 &&
-					'Gulmira Uakhitova, Ph.D. Verband der Unternehmer der Leichtindustrie "Qaz Textile Industry"'}
+					'Gulmira Uakhitova, Ph.D. Verband der Unternehmer der Leichtindustrie "Qaz Textile"'}
 			</p>
 
 			<div className="subtitle">
@@ -600,9 +612,9 @@ const Section4 = ({ activeSectionId, language }) => (
 			</div>
 
 			<p className="item">
-				{language === 0 && 'Владимир Богданов, представитель GIZ'}
-				{language === 1 && 'Владимир Богданов, GIZ өкілі'}
-				{language === 2 && 'Vladimir Bogdanov, GIZ-Vertreter'}
+				{language === 0 && 'Andrea Eles, руководитель проектов GIZ'}
+				{language === 1 && 'Андреа Элес, GIZ жобасының менеджері'}
+				{language === 2 && 'Andrea Eles, GIZ-Projektleiterin'}
 			</p>
 
 			<div className="subtitle">
@@ -613,11 +625,11 @@ const Section4 = ({ activeSectionId, language }) => (
 
 			<p className="item">
 				{language === 0 &&
-					'Мерей Исаева, заместитель директора Департамента развити предпринимательства Министерства национальной экономики Республики Казахстан'}
+					'Мерей Исаева, Заместитель директора Департамента государстенной поддержки и защиты предпринимательства Министерства национальной экономики Республики Казахстан'}
 				{language === 1 &&
-					'Мерей Исаева, Даму департаменті директорының орынбасары Ұлттық экономика министрлігінің кәсіпкерлік Қазақстан Республикасы'}
+					'Мерей Исаева, Қазақстан Республикасы Ұлттық экономика министрлігі Мемлекеттік қолдау және кәсіпкерлікті қорғау департаменті директорының орынбасары'}
 				{language === 2 &&
-					'Merey Isayeva, stellvertretende Direktorin der Entwicklungsabteilung Unternehmertum des Ministeriums für Volkswirtschaft Republik Kasachstan'}
+					'Merey Isayeva, stellvertretende Direktorin der Abteilung für staatliche Unterstützung und Schutz des Unternehmertums des Ministeriums für Volkswirtschaft der Republik Kasachstan'}
 			</p>
 
 			<div className="subtitle">
@@ -685,11 +697,11 @@ const Section4 = ({ activeSectionId, language }) => (
 
 			<p className="item">
 				{language === 0 &&
-					'Гульмира Раисова, президент координационного совета Ассоциации HR менеджеров РК, менеджеров РК, партнер Empower people, SCP SHRM'}
+					'Гульмира Раисова, президент координационного совета Ассоциации HR менеджеров РК, партнер Empower people, SCP SHRM'}
 				{language === 1 &&
-					'Гүлмира Раисова, Қазақстан Республикасы HR-менеджерлер қауымдастығының Үйлестіру кеңесінің президенті, Қазақстан Республикасының менеджерлері, Empower people серіктесі, SCP SHRM'}
+					'Гүлмира Раисова, Қазақстан Республикасы HR-менеджерлер қауымдастығының Үйлестіру кеңесінің президенті, Empower people серіктесі, SCP SHRM'}
 				{language === 2 &&
-					'Gulmira Raisova, Präsidentin des Koordinierungsrates der Vereinigung der Personalmanager der Republik Kasachstan, Manager der Republik Kasachstan, Partner von Empower People, SCP SHRM'}
+					'Gulmira Raisova, Präsidentin des Koordinierungsrates der Vereinigung der Personalmanager der Republik Kasachstan, Partnerin von Empower People, SCP SHRM'}
 			</p>
 		</div>
 	</section>
