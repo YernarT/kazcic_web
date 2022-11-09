@@ -11,7 +11,7 @@ export default function SpeakerCard({ speaker, noImage }) {
 	return (
 		<div className={styles.speakerCard}>
 			<div className="imgWrap">
-				{noImage && <img src={speaker.image} alt={speaker.name} />}
+				{noImage && <img src={speaker.image} alt={speaker.name(language)} />}
 			</div>
 
 			<h4 className="name">{speaker.name(language)}</h4>
