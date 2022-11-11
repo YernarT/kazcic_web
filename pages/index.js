@@ -40,7 +40,7 @@ export default function Home() {
 			<div className={styles.videoWrap}>
 				{language === 0 && (
 					<video className={styles.video} muted controls>
-						<source src="/video/v_ru.mp4" type="video/mp4" />
+						<source src="/video/v_kz.mp4" type="video/mp4" />
 						Your browser does not support the video tag.
 					</video>
 				)}
